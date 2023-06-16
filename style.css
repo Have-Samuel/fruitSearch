@@ -9,7 +9,7 @@
 }
 
 body {
-  /* TODO */
+  background-image: linear-gradient(to right, rgb(167, 83, 167), rgb(219, 219, 23));
 }
 
 input {
