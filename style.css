@@ -2,10 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-}
-
-:focus {
-  /* TODO */
+  font-family: "Roboto", sans-serif;
 }
 
 body {
@@ -30,7 +27,6 @@ input {
   text-decoration: none;
   outline: none;
   font-size: 1.2rem;
-  font-family: "Roboto", sans-serif;
 }
 
 .search-container input,
