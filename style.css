@@ -40,6 +40,13 @@ body {
   position: absolute;
   top: 0;
   right: 0;
+  text-align: center;
+  color: rgb(173, 66, 173);
+  cursor: pointer;
 }
-  
+
+.search-input .autocom-box {
+  padding: 10px 8px;
+  max-height: 280px;
+  overflow-y: auto;
 }
