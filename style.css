@@ -17,9 +17,8 @@ body {
   grid-template-columns: 1fr 1fr;
   grid-gap: 1rem;
   padding: 0.3rem;
-  max-width: 400px;
+  max-width: 270px;
   margin: 15rem auto;
-  /* margin-top: 2rem; */
   background-color: #fff;
   border-radius: 0.5rem;
   box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.2);
