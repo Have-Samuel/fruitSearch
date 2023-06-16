@@ -24,13 +24,14 @@ body {
 }
 
 .search-input input {
-  /* height: 55px; */
+  height: 55px;
   width: 100%;
   padding: 0.5rem 1rem;
   border: none;
   outline: none;
   font-size: 1.2rem;
   border-radius: 0.5rem;
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.2);
 }
 
 .search-input .icon {
@@ -48,5 +49,20 @@ body {
 .search-input .autocom-box {
   padding: 10px 8px;
   max-height: 280px;
-  overflow-y: auto;
+  overflow-y: hidden;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.autocom-box li {
+  list-style: none;
+  padding: 0.5rem 1rem;
+  font-size: 1.2rem;
+  cursor: default;
+  border-radius: 0.2rem;
+  display: none;
+}
+
+.autocom-box li:hover {
+  background-color: #8a888833;
 }
