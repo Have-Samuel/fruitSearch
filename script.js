@@ -10,16 +10,15 @@ function search(str) {
 }
 
 function searchHandler(e) {
-  // TODO
+
 }
 
 function showSuggestions(results, inputVal) {
 
-  // TODO
 }
 
 function useSuggestion(e) {
-  // TODO
+ 
 }
 
 input.addEventListener('keyup', searchHandler);
