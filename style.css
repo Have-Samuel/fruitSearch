@@ -11,6 +11,7 @@ body {
 }
 
 .search-container {
+  position: relative;
   max-width: 450px;
   margin: 15rem auto;
 }
@@ -32,33 +33,13 @@ body {
   border-radius: 0.5rem;
 }
 
-
-
-.search-container input,
-.search-container .suggestions {
-  /* TODO */
+.search-input .icon {
+  height: 55px;
+  width: 55px;
+  line-height: 55px;
+  position: absolute;
+  top: 0;
+  right: 0;
 }
-
-.search-container input {
-  /* TODO */
-}
-
-.search-container .suggestions {
-  /* TODO */
-}
-
-ul {
-  /* TODO */
-}
-
-ul.has-suggestions {
-  /* TODO */
-}
-
-ul li {
-  /* TODO */
-}
-
-ul li:hover {
-  /* TODO */
+  
 }
