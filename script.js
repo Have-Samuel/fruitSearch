@@ -6,8 +6,6 @@ const fruit = ['Apple', 'Apricot', 'Avocado 🥑', 'Banana', 'Bilberry', 'Blackb
 function search(str) {
   const results = [];
 
-  // TODO
-
   return results;
 }
 
