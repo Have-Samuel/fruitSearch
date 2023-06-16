@@ -7,23 +7,32 @@
 
 body {
   background-image: linear-gradient(to right, rgb(167, 83, 167), rgb(219, 219, 23));
+  padding: 0 1rem;
 }
 
 .search-container {
   max-width: 450px;
   margin: 15rem auto;
+}
+
+.search-container .search-input {
   background-color: #fff;
   border-radius: 0.5rem;
+  width: 100%;
   box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.2);
 }
 
-input {
-  padding: 0.5rem;
+.search-input input {
+  /* height: 55px; */
+  width: 100%;
+  padding: 0.5rem 1rem;
   border: none;
-  text-decoration: none;
   outline: none;
   font-size: 1.2rem;
+  border-radius: 0.5rem;
 }
+
+
 
 .search-container input,
 .search-container .suggestions {
