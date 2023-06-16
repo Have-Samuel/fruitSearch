@@ -10,11 +10,7 @@ body {
 }
 
 .search-container {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-gap: 1rem;
-  padding: 0.3rem;
-  max-width: 270px;
+  max-width: 450px;
   margin: 15rem auto;
   background-color: #fff;
   border-radius: 0.5rem;
