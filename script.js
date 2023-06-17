@@ -44,17 +44,19 @@ inputField.onkeyup = (eve) => {
   let emptyArray = [];
   if (userData) {
     emptyArray = fruits.filter((data) => {
+    //  Filters the array value and user character
+    // to lowercase and returns only those words/sentences which start with the users
+    // Entered Word/sentence
       return data.toLocaleLowerCase().startsWith(userData.toLocaleLowerCase());
     });
     // Shows all the fruits
 
     // Putting all outputs in the LIs
-    // Also the {startsWith} function => Filters the array value and user character
-    // to lowercase and returns only those words/sentences which start with the users
-    // Entered Word/sentence
+    // Also the {startsWith} function
     emptyArray = emptyArray.map((data) => {
       return data = '<li>' + data + '</li>';
     });
+    // console.log(emptyArray);
     search.classList.add('active'); // Show autocomplete box
     displayOptions(emptyArray);
     const allList = showRequest.querySelectorAll('li');
