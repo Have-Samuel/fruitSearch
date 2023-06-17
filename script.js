@@ -1,3 +1,9 @@
+/* eslint-disable no-unused-vars */
+/* eslint-disable no-undef */
+/* eslint-disable no-use-before-define */
+/* eslint-disable prefer-template */
+/* eslint-disable arrow-body-style */
+/* eslint-disable max-len */
 /* eslint-disable no-return-assign */
 // Getting all required Elements
 const search = document.querySelector('.search-input');
@@ -21,36 +27,48 @@ const fruits = [
   'Salak', 'Satsuma', 'Soursop', 'Star fruit', 'Strawberry',
   'Tamarillo', 'Tamarind', 'Yuzu'];
 
+function displayOptions(list) {
+  let listData;
+  if (!list.lentgth) {
+    userValue = inputField.value;
+    listData = '<li>' + userValue + '</li>';
+  } else {
+    listData = list.join('');
+  }
+  showRequest.innerHTML = listData;
+}
+
 // If User presses any button and Releases
 inputField.onkeyup = (eve) => {
   const userData = eve.target.value; // User Entered Data
   let emptyArray = [];
   if (userData) {
-    emptyArray = fruits.filter((data) => data.toLocaleLowerCase());
+    emptyArray = fruits.filter((data) => {
+      return data.toLocaleLowerCase().startsWith(userData.toLocaleLowerCase());
+    });
     // Shows all the fruits
-    console.log(emptyArray);
+
+    // Putting all outputs in the LIs
+    // Also the {startsWith} function => Filters the array value and user character
+    // to lowercase and returns only those words/sentences which start with the users
+    // Entered Word/sentence
+    emptyArray = emptyArray.map((data) => {
+      return data = '<li>' + data + '</li>';
+    });
+    search.classList.add('active'); // Show autocomplete box
+    displayOptions(emptyArray);
+    const allList = showRequest.querySelectorAll('li');
+    for (let i = 0; i < allList.length; i += 1) {
+      // Adding onclick attribute in all li tag
+      allList[i].setAttribute('onclick', 'select(this)');
+    }
+  } else {
+    search.classList.remove('active'); // Hide autocomplete box
   }
-  emptyArray = emptyArray.map((data) => data = `<li>${data}</li>`);
-  console.log(emptyArray);
 };
 
-// function search(str) {
-//   const results = [];
-
-//   return results;
-// }
-
-// function searchHandler(e) {
-
-// }
-
-// function showSuggestions(results, inputVal) {
-
-// }
-
-// function useSuggestion(e) {
-
-// }
-
-// input.addEventListener('keyup', searchHandler);
-// suggestions.addEventListener('click', useSuggestion);
+function select(element) {
+  const selectUserData = element.textContent;
+  inputField.value = selectUserData; // Passing the user selected list item data in textfield
+  search.classList.remove('active'); // Hide autocomplete box
+}
