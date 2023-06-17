@@ -25,7 +25,7 @@ const fruits = [
   'Plantain', 'Plum', 'Pineapple', 'Pomegranate', 'Pomelo',
   'Quince', 'Raspberry', 'Salmonberry', 'Rambutan', 'Redcurrant',
   'Salak', 'Satsuma', 'Soursop', 'Star fruit', 'Strawberry',
-  'Tamarillo', 'Tamarind', 'Yuzu'];
+  'Tamarillo', 'Tamarind', 'Yuzu', 'Tomatoe 🍎'];
 
 function displayOptions(list) {
   let listData;
