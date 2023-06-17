@@ -69,6 +69,7 @@ inputField.onkeyup = (eve) => {
 
 function select(element) {
   const selectUserData = element.textContent;
+  console.log(selectUserData);
   inputField.value = selectUserData; // Passing the user selected list item data in textfield
   search.classList.remove('active'); // Hide autocomplete box
 }
