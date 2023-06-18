@@ -43,4 +43,8 @@ inputField.onkeyup = () => {
     console.log(result);
   }
   display(result);
+  // When there is no input the horizintal line should be put off
+  if (!result.length) {
+    showRequest.innerHTML = '';
+  }
 };
