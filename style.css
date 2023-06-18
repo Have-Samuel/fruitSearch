@@ -11,9 +11,11 @@ body {
 }
 
 .search-input {
-  position: relative;
-  max-width: 450px;
-  margin: 15rem auto;
+  max-width: 500px;
+  background: #fff;
+  border-radius: 0.5rem;
+  margin: 200px auto 0;
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.2);
 }
 
 .row {
@@ -23,14 +25,13 @@ body {
 
 .row input {
   flex: 1;
-  height: 55px;
+  height: 50px;
   width: 100%;
   padding: 0.5rem 1rem;
   border: none;
   outline: none;
   font-size: 1.2rem;
   border-radius: 0.5rem;
-  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.2);
 }
 
 button {
@@ -41,10 +42,7 @@ button {
 
 .icon {
   width: 55px;
-  line-height: 55px;
-  position: absolute;
-  top: 0;
-  right: 0;
+  font-size: 1.2rem;
   text-align: center;
   color: rgb(173, 66, 173);
   cursor: pointer;
