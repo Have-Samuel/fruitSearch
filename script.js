@@ -1,7 +1,6 @@
 // Getting all required Elements
-const search = document.querySelector('.search-input');
-const inputField = search.querySelector('.input-data');
-const showRequest = document.querySelector('.autocom-box');
+const showRequest = document.querySelector('.option-box');
+const inputField = document.querySelector('.input-data');
 
 const fruits = [
   'Apple', 'Apricot', 'Avocado 🥑', 'Banana', 'Bilberry', 'Blackberry',
@@ -20,3 +19,4 @@ const fruits = [
   'Salak', 'Satsuma', 'Soursop', 'Star fruit', 'Strawberry',
   'Tamarillo', 'Tamarind', 'Yuzu', 'Tomatoe 🍎'];
 
+// If user press any key and release
