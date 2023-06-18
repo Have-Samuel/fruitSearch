@@ -27,7 +27,7 @@ body {
   flex: 1;
   height: 50px;
   width: 100%;
-  padding: 0.5rem 1rem;
+  padding: 0.5rem 1.5rem;
   border: none;
   outline: none;
   font-size: 1.2rem;
@@ -52,25 +52,23 @@ button {
   color: rgb(173, 66, 173);
 }
 
-.search-input .autocom-box {
-  padding: 0;
-  max-height: 280px;
-  overflow-y: hidden;
-  opacity: 0;
-  pointer-events: none;
+.option-box ul {
+  border-top: 1px solid #999;
+  padding: 1rem 0.6rem;
 }
 
-.autocom-box li {
+.option-box ul li {
   list-style: none;
   padding: 0.5rem 1rem;
   font-size: 1.2rem;
-  cursor: default;
+  cursor: pointer;
   border-radius: 0.2rem;
-  display: none;
+  color: rgb(173, 66, 173);
+  opacity: 0.8;
 }
 
-.autocom-box li:hover {
-  background-color: #8a888833;
+.option-box ul li:hover {
+  background-color: #eef0f1;
 }
 
 .search-input.active .autocom-box {
