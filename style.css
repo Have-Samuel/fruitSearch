@@ -33,8 +33,13 @@ body {
   box-shadow: 0 1px 5px rgba(0, 0, 0, 0.2);
 }
 
-.search-input .icon {
-  height: 55px;
+button {
+  background: transparent;
+  border: none;
+  outline: none;
+}
+
+.icon {
   width: 55px;
   line-height: 55px;
   position: absolute;
@@ -43,6 +48,10 @@ body {
   text-align: center;
   color: rgb(173, 66, 173);
   cursor: pointer;
+}
+
+::placeholder {
+  color: rgb(173, 66, 173);
 }
 
 .search-input .autocom-box {
