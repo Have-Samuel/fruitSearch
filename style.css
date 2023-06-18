@@ -10,20 +10,19 @@ body {
   padding: 0 1rem;
 }
 
-.search-container {
+.search-input {
   position: relative;
   max-width: 450px;
   margin: 15rem auto;
 }
 
-.search-container .search-input {
-  background-color: #fff;
-  border-radius: 0.5rem;
-  width: 100%;
-  box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.2);
+.row {
+  display: flex;
+  align-items: center;
 }
 
-.search-input input {
+.row input {
+  flex: 1;
   height: 55px;
   width: 100%;
   padding: 0.5rem 1rem;
