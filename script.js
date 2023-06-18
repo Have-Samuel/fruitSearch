@@ -21,8 +21,16 @@ const fruits = [
 
 // Displaying the Result below the search box
 function display(result) {
-  const content = result.map((fruit) => `<li>${fruit}</li>`);
+// the list will get disappeared
+  const content = result.map((fruit) => `<li onclick=selectInput(this)>${fruit}</li>`);
   showRequest.innerHTML = `<ul>${content.join('')}</ul>`;
+}
+
+function selectInput(fruit) {
+  // When User clicks on any fruit name,
+  inputField.value = fruit.innerHTML;
+  // it will be displayed in the input field and
+  showRequest.innerHTML = '';
 }
 
 // If user press any key and release
