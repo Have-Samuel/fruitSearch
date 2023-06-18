@@ -19,6 +19,12 @@ const fruits = [
   'Salak', 'Satsuma', 'Soursop', 'Star fruit', 'Strawberry',
   'Tamarillo', 'Tamarind', 'Yuzu', 'Tomatoe 🍎'];
 
+// Displaying the Result below the search box
+function display(result) {
+  const content = result.map((fruit) => `<li>${fruit}</li>`);
+  showRequest.innerHTML = `<ul>${content.join('')}</ul>`;
+}
+
 // If user press any key and release
 inputField.onkeyup = () => {
   let result = [];
@@ -28,4 +34,5 @@ inputField.onkeyup = () => {
     result = fruits.filter((keyword) => keyword.toLowerCase().includes(input.toLowerCase()));
     console.log(result);
   }
+  display(result);
 };
