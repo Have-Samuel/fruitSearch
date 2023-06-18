@@ -20,3 +20,12 @@ const fruits = [
   'Tamarillo', 'Tamarind', 'Yuzu', 'Tomatoe 🍎'];
 
 // If user press any key and release
+inputField.onkeyup = () => {
+  let result = [];
+  const input = inputField.value;
+  if (input.length) {
+    // filter fruits array and return match value
+    result = fruits.filter((keyword) => keyword.toLowerCase().includes(input.toLowerCase()));
+    console.log(result);
+  }
+};
