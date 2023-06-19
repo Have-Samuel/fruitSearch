@@ -41,10 +41,10 @@ inputField.onkeyup = () => {
   if (input.length) {
     // filter fruits array and return match value
     result = fruits.filter((keyword) => keyword.toLowerCase().includes(input.toLowerCase()));
-    console.log(result);
+    // console.log(result);
   }
   display(result);
-  // When there is no input the horizintal line should be put off
+  // When there is no input the horizontal line should be put off
   if (!result.length) {
     showRequest.innerHTML = '';
   }
