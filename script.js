@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 // Getting all required Elements
 const showRequest = document.querySelector('.option-box');
 const inputField = document.querySelector('.input-data');
