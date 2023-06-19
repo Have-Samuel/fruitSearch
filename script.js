@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 // Getting all required Elements
 const showRequest = document.querySelector('.option-box');
 const inputField = document.querySelector('.input-data');
@@ -21,8 +22,16 @@ const fruits = [
 
 // Displaying the Result below the search box
 function display(result) {
-  const content = result.map((fruit) => `<li>${fruit}</li>`);
+  const content = result.map((fruit) => `<li onclick=selectInput(this)>${fruit}</li>`);
   showRequest.innerHTML = `<ul>${content.join('')}</ul>`;
+}
+
+function selectInput(fruit) {
+  // When User clicks on any fruit name,
+  inputField.value = fruit.innerHTML;
+  // it will be displayed in the input field and
+  // the list will get disappeared
+  showRequest.innerHTML = '';
 }
 
 // If user press any key and release
@@ -32,7 +41,11 @@ inputField.onkeyup = () => {
   if (input.length) {
     // filter fruits array and return match value
     result = fruits.filter((keyword) => keyword.toLowerCase().includes(input.toLowerCase()));
-    console.log(result);
+    // console.log(result);
   }
   display(result);
+  // When there is no input the horizontal line should be put off
+  if (!result.length) {
+    showRequest.innerHTML = '';
+  }
 };

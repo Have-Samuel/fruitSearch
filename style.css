@@ -80,3 +80,8 @@ button {
 .search-input.active .autocom-box li {
   display: block;
 }
+
+.option-box {
+  max-height: 400px;
+  overflow-y: scroll;
+}
